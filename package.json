@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/JarvusInnovations/habitat-client/issues"
   },
-  "homepage": "https://github.com/JarvusInnovations/habitat-client#readme"
+  "homepage": "https://github.com/JarvusInnovations/habitat-client#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "semver": "^5.5.1",
+    "underscore": "^1.9.1"
+  }
 }
