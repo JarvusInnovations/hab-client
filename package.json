@@ -1,0 +1,25 @@
+{
+  "name": "habitat-client",
+  "version": "1.0.0",
+  "description": "Promise-based habitat client that mostly just executes the hab binary but can also query the supervisor API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JarvusInnovations/habitat-client.git"
+  },
+  "keywords": [
+    "habitat",
+    "hab",
+    "supervisor",
+    "chef"
+  ],
+  "author": "Chris Alfano <chris@jarv.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JarvusInnovations/habitat-client/issues"
+  },
+  "homepage": "https://github.com/JarvusInnovations/habitat-client#readme"
+}
