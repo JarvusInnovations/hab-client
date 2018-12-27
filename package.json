@@ -1,6 +1,6 @@
 {
   "name": "hab-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise-based habitat client that mostly just executes the hab binary but can also query the supervisor API",
   "main": "index.js",
   "scripts": {
