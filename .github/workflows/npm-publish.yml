@@ -1,0 +1,26 @@
+name: 'NPM: Publish'
+
+on:
+  push:
+    tags: [ 'v*' ]
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+        registry-url: 'https://registry.npmjs.org'
+
+    - uses: actions/checkout@v3
+
+    - name: Setting package.json version
+      run: npm version --no-git-tag-version --allow-same-version "${GITHUB_REF:11}"
+
+    - run: npm ci
+
+    - run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
